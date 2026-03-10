@@ -28,3 +28,12 @@ link.classList.add("active");
 
 });
 
+const menuBtn = document.getElementById("menuBtn");
+const navlinks = document.getElementById("navlinks");
+
+menuBtn.addEventListener("click", () => {
+
+menuBtn.classList.toggle("active");
+navLinks.classList.toggle("active");
+
+});
