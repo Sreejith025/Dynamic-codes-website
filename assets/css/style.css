@@ -693,7 +693,7 @@ align-items:center;
 padding:15px 25px;
 position:fixed;
 width:100%;
-top:0;
+top:20px;
 z-index:1000;
 
 background:rgba(0,0,0,0.6);
@@ -779,4 +779,17 @@ opacity:0;
 
 .menu-btn.active span:nth-child(3){
 transform:rotate(-45deg) translate(6px,-6px);
+}
+
+@media (max-width:768px){
+
+.nav-links{
+display:none;
+flex-direction:column;
+}
+
+.nav-links.active{
+display:flex;
+}
+
 }
