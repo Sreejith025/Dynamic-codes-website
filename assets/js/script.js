@@ -8,7 +8,6 @@ let current = "";
 sections.forEach(section => {
 
 const sectionTop = section.offsetTop;
-const sectionHeight = section.clientHeight;
 
 if(pageYOffset >= sectionTop - 200){
 current = section.getAttribute("id");
@@ -34,7 +33,6 @@ const navlinks = document.getElementById("navlinks");
 menuBtn.addEventListener("click", () => {
 
 menuBtn.classList.toggle("active");
-navLinks.classList.toggle("active");
+navlinks.classList.toggle("active");
 
 });
-
