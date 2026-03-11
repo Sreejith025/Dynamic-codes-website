@@ -800,8 +800,8 @@ display:flex;
 
 .nav-links{
 position:absolute;
-top:80px;
-left:50%;
+top:70px;
+left:0;
 width:100%;
 
 background:#0b0b0b;
