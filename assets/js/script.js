@@ -36,3 +36,26 @@ menuBtn.classList.toggle("active");
 navlinks.classList.toggle("active");
 
 });
+
+document.addEventListener("click", function(event){
+
+const isClickInsideMenu = navlinks.contains(event.target);
+const isClickMenuBtn = menuBtn.contains(event.target);
+
+if(!isClickInsideMenu && !isClickMenuBtn){
+
+menuBtn.classList.remove("active");
+navlinks.classList.remove("active");
+
+}
+
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+link.addEventListener("click", () => {
+
+menuBtn.classList.remove("active");
+navlinks.classList.remove("active");
+
+});
+});
