@@ -149,7 +149,7 @@ rotate 20s linear infinite;
 opacity:0.9;
 }
 
-.python{ top:35%; left:15%; }
+.python{ top:35%; left:12%; }
 .react{ top:85%; left:75%; }
 .node{ top:20%; left:25%; }
 .flutter{ top:70%; left:10%; }
@@ -890,6 +890,8 @@ text-align:center;
 text-align:center;
 padding:80px 20px;
 overflow:hidden;
+width:100%;
+
 }
 
 .tech-slider{
@@ -902,26 +904,67 @@ position:relative;
 display:flex;
 gap:40px;
 width:max-content;
-border:1px solid #00c7d9;
-box-shadow:0 0 20px #00e5ff;
+
+
 
 animation:scrollTech 20s linear infinite;
 }
 
 .tech-item{
-text-align:center;
-min-width:120px;
+min-width:110px;
+height:110px;
+
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+
+border-radius:15px;
+
+padding:15px;
+
+transition:0.3s;
 }
 
 .tech-item img{
-width:60px;
-height:60px;
-margin-bottom:10px;
+width:45px;
+height:45px;
+margin-bottom:8px;
 }
 
 .tech-item p{
+font-size:13px;
 color:white;
-font-size:14px;
+}
+
+.react3{
+background:#1e293b;
+}
+
+.python5{
+background:#1f3b2d;
+}
+
+.java7{
+background:#3b1f1f;
+}
+
+.html1{
+background:#3b2a1f;
+}
+
+.nodejs4{
+    background: #a5d3ea;
+}
+.mongodb6{
+    background: #a9c043;
+}
+.css2{
+background:#1f2f3b;
+}
+
+.node8{
+background:#243b1f;
 }
 
 /* Animation */
@@ -941,7 +984,7 @@ transform:translateX(-50%);
 @media(max-width:768px){
 
 .tech-item{
-min-width:90px;
+min-width:35px;
 }
 
 .tech-item img{
@@ -951,3 +994,23 @@ height:45px;
 
 }
 
+.tech-slider::before,
+.tech-slider::after{
+
+content:"";
+position:absolute;
+top:0;
+width:50px;
+height:100%;
+z-index:2;
+}
+
+.tech-slider::before{
+left:0;
+background:linear-gradient(to right,#0a0a0a,transparent);
+}
+
+.tech-slider::after{
+right:0;
+background:linear-gradient(to left,#0a0a0a,transparent);
+}
