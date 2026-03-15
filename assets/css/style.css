@@ -10,7 +10,7 @@ background:#000;
 color:white;
 }
 
-/* container */
+
 
 .container{
 width:90%;
@@ -19,7 +19,7 @@ margin:auto;
 }
 
 
-/* GLASS NAVBAR */
+
 
 .navbar{
 position:sticky;
@@ -48,7 +48,7 @@ color:#06b6d4;
 }
 
 
-/* HERO */
+
 
 .hero{
 position:relative;
@@ -61,7 +61,7 @@ overflow:hidden;
 }
 
 
-/* HERO TEXT */
+
 
 .hero-content{
 z-index:2;
@@ -83,7 +83,7 @@ font-size: clamp(14px, 2vw, 20px);
 opacity:0.8;
 }
 
-/* BUTTON */
+
 
 .btn{
 position:relative;
@@ -130,7 +130,7 @@ text-align:center;
 
 }
 
-/* FLOATING TECH ICONS */
+
 
 .floating-tech{
 position:absolute;
@@ -174,7 +174,7 @@ to{transform:rotate(360deg);}
 }
 
 
-/* GRADIENT BLOBS */
+
 
 .blob{
 position:absolute;
@@ -261,8 +261,6 @@ opacity:0.08;
 font-weight:bold;
 }
 
-/* different positions */
-
 .code1{
 top:15%;
 left:10%;
@@ -293,7 +291,6 @@ left:14%;
 animation:float5 13s infinite;
 }
 
-/* different animations */
 
 @keyframes float1{
 0%{transform:translateY(0);}
@@ -326,8 +323,6 @@ animation:float5 13s infinite;
 }
 
 
-/* NAVBAR */
-
 .navbar{
 position:fixed;
 top:20px;
@@ -355,8 +350,6 @@ box-shadow:0 0 20px rgba(0,255,255,0.2);
 z-index:1000;
 }
 
-/* logo */
-
 .nav-logo{
 display:flex;
 align-items:center;
@@ -371,7 +364,6 @@ font-size:18px;
 color:white;
 }
 
-/* links */
 
 .nav-links{
 display:flex;
@@ -389,7 +381,6 @@ transition:0.3s;
 color:#00e5ff;
 }
 
-/* menu icon */
 
 .menu-btn{
 display:none;
@@ -581,7 +572,6 @@ color:#aaa;
 
 }
 
-/* SECTION TITLE */
 
 .section-title{
 text-align:center;
@@ -592,8 +582,6 @@ font-size: clamp(32px, 6vw, 64px);
 line-height:1.2;
 font-weight:700;
 }
-
-/* SERVICES */
 
 .services{
 padding:80px 10%;
@@ -642,7 +630,7 @@ border-radius:3px;
 transition:0.3s;
 }
 
-/* Mobile */
+
 
 @media (max-width:768px){
 
@@ -670,7 +658,6 @@ display:flex;
 
 }
 
-/* hamburger animation */
 
 .menu-btn.active span:nth-child(1){
 transform:rotate(45deg) translate(5px,5px);
@@ -684,7 +671,7 @@ opacity:0;
 transform:rotate(-45deg) translate(6px,-6px);
 }
 
-/* NAVBAR */
+
 
 .navbar{
 display:flex;
@@ -703,7 +690,7 @@ backdrop-filter:blur(10px);
 border-radius:50px;
 }
 
-/* NAV LINKS */
+
 
 .nav-links{
 display:flex;
@@ -721,7 +708,7 @@ transition:0.3s;
 color:#00e5ff;
 }
 
-/* HAMBURGER */
+
 
 .menu-btn{
 display:none;
@@ -738,7 +725,6 @@ border-radius:5px;
 transition:0.3s;
 }
 
-/* MOBILE MENU */
 
 @media (max-width:768px){
 
@@ -769,8 +755,6 @@ transform:translateY(0);
 }
 
 }
-
-/* HAMBURGER ANIMATION */
 
 .menu-btn.active span:nth-child(1){
 transform:rotate(45deg) translate(5px,5px);
@@ -826,7 +810,6 @@ font-size:18px;
 
 }
 
-/* ABOUT SECTION */
 
 .about{
 padding:100px 20px;
@@ -856,8 +839,6 @@ font-size: clamp(14px,1.6vw,18px);
 margin-bottom:15px;
 }
 
-/* SKILLS */
-
 .skill{
 margin-bottom:20px;
 }
@@ -869,33 +850,26 @@ border-radius:10px;
 overflow:hidden;
 }
 
-/* Default progress bar */
-
 .progress span{
 display:block;
 height:100%;
 border-radius:20px;
 }
 
-/* Web Development */
-
 .skills .skill:nth-child(1) .progress span{
 background:linear-gradient(90deg,#E87358,#B52A2A);
 }
 
-/* Mobile Apps */
 
 .skills .skill:nth-child(2) .progress span{
 background:linear-gradient(90deg,#E6DD7A,#F2E207);
 }
 
-/* UI / UX Design */
 
 .skills .skill:nth-child(3) .progress span{
 background:linear-gradient(90deg,#65f1c2,#0bd3b8);
 }
 
-/* Backend Development */
 
 .skills .skill:nth-child(4) .progress span{
 background:linear-gradient(90deg,#e67acf,#dd19b3);
@@ -908,8 +882,6 @@ text-align:center;
 }
 
 }
-
-/* TECH STACK */
 
 .tech-section{
 text-align:center;
@@ -991,8 +963,6 @@ background:#1f2f3b;
 .node8{
 background:#243b1f;
 }
-
-/* Animation */
 
 @keyframes scrollTech{
 
