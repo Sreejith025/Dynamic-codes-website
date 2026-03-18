@@ -1146,3 +1146,95 @@ position:relative;
 z-index:1;
 }
 
+.contact{
+padding:80px 10%;
+text-align:center;
+}
+
+.contact-subtitle{
+color:#aaa;
+margin-bottom:40px;
+}
+
+.contact-form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.input-group{
+position:relative;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+width:100%;
+padding:14px;
+border:none;
+outline:none;
+background:#0a0a0a;
+color:#fff;
+border-radius:10px;
+font-size:14px;
+}
+
+.input-group label{
+position:absolute;
+left:14px;
+top:14px;
+color:#777;
+font-size:13px;
+transition:0.3s;
+pointer-events:none;
+background:#0a0a0a;
+padding:0 5px;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group select:focus + label,
+.input-group input:valid + label,
+.input-group textarea:valid + label,
+.input-group select:valid + label{
+top:-8px;
+font-size:11px;
+color:#00eaff;
+}
+
+textarea{
+resize:none;
+height:130px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus{
+box-shadow:0 0 10px rgba(0,234,255,0.3);
+}
+
+.contact-btn{
+padding:14px;
+border:none;
+border-radius:30px;
+background:linear-gradient(90deg,#00eaff,#00aaff);
+color:#000;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.contact-btn:hover{
+transform:scale(1.05);
+box-shadow:0 5px 20px rgba(0,234,255,0.4);
+}
+
+@media(max-width:768px){
+
+.contact{
+padding:60px 20px;
+}
+
+}

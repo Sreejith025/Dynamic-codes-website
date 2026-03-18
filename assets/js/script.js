@@ -59,3 +59,14 @@ navlinks.classList.remove("active");
 
 });
 });
+
+const projectType = document.getElementById("projectType");
+const otherInput = document.getElementById("otherInput");
+
+projectType.addEventListener("change", () => {
+if(projectType.value === "other"){
+otherInput.style.display = "block";
+} else {
+otherInput.style.display = "none";
+}
+});
