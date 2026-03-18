@@ -70,3 +70,11 @@ otherInput.style.display = "block";
 otherInput.style.display = "none";
 }
 });
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.classList.add("hidden");
+  }, 3000);
+});
