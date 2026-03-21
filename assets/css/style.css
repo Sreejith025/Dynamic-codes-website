@@ -673,20 +673,56 @@ transform:rotate(-45deg) translate(6px,-6px);
 }
 
 .navbar{
+position: fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:12px 20px;
-position:fixed;
+
 width:90%;
-left: 50%;
-top:20px;
-z-index:1000;
-max-width: 1100px;
-transform: translateX(-50%);
-background:rgba(0,0,0,0.6);
-backdrop-filter:blur(10px);
+max-width:1100px;
+padding:12px 25px;
+
 border-radius:50px;
+border:2px solid transparent;
+
+background:
+  conic-gradient(
+    from var(--border-angle),
+    #0a0a0a,
+    #050505 10%,
+    #050505 90%,
+    #0a0a0a
+  ) padding-box,
+
+  conic-gradient(
+    from var(--border-angle),
+    transparent 20%,
+    #8b5cf6,
+    #00aaff,
+    #00eaff,
+    transparent 80%
+  ) border-box;
+
+animation: borderRotate 4s linear infinite;
+
+z-index:1000;
+backdrop-filter:blur(10px);
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+@keyframes borderRotate {
+  to {
+    --border-angle: 1turn;
+  }
 }
 
 .nav-links{
